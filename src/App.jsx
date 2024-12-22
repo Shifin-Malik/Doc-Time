@@ -9,8 +9,7 @@ import MyProile from './pages/MyProfile'
 import MyAppointments from './pages/MyAppointments'
 import Appointment from './pages/Appointment'
 import GettingStarted from './pages/GettingStarted'
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
+
 function App() {
   return (
     <div className='dark:bg-gray-900'>
@@ -21,8 +20,6 @@ function App() {
 
      <Routes>
           <Route path='/Doc-Time/'  element={ <GettingStarted/> } />
-          <Route path="/page2" element={<Page2 />} />
-          <Route path="/page3" element={<Page3 />} />
           <Route path='/' element={ <Home/> } />
           <Route path='/doctors' element={ <Doctors/> } />
           <Route path='/doctors/:speciality' element={ <Doctors/> } />
