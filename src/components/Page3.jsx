@@ -7,9 +7,9 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 function Page3() {
   return (
-    <section className="flex flex-col justify-center items-center h-screen px-4 sm:px-8">
+    <section className="flex flex-col justify-start items-center h-screen">
       {/* Lottie Animation */}
-      <Lottie className="w-96 h-96" animationData={DoctorAnimation} />
+      <Lottie className="mt-6 w-96 h-96" animationData={DoctorAnimation} />
 
       {/* Title */}
       <Typography

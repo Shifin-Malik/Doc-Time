@@ -30,7 +30,7 @@ function LoadingAnimation() {
   }, [theme]);
 
   return (
-    <div className="dark:bg-gray-900 h-screen flex flex-col items-center justify-center">
+    <div className="dark:bg-gray-900 h-screen flex  items-center justify-center">
       {isLoading ? (
         <div
           id="loading-icon"
@@ -44,12 +44,12 @@ function LoadingAnimation() {
           <p className="mt-4 text-gray-500 font-medium">DocTime</p>
         </div>
       ) : (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-start items-center h-screen ">
           {/* Lottie Animation */}
-          <Lottie className="w-96 h-96" animationData={Doctor2} />
+          <Lottie className="mt-6 w-96 h-96" animationData={Doctor2} />
           <Typography
             className="mt-2 text-center text-primary dark:text-gray-300"
-            variant="h3"
+            variant="h2"
           >
            <span className="text-gray-600">Learn About</span> Your Doctors
           </Typography>
@@ -58,12 +58,12 @@ function LoadingAnimation() {
             className="mt-4 text-center text-gray-700 dark:text-gray-300"
             variant="h5"
           >
-            "Your trusted platform for booking appointments, consulting doctors,
-            and managing health."
+            Your trusted platform for booking appointments, consulting doctors,
+            and managing health.
           </Typography>
 
           {/* Navigation Buttons */}
-          <div className="flex justify-between w-full px-8 mt-8">
+          <div className="flex justify-between w-full px-12 mt-8">
             {/* Back Button */}
            
               <Button
